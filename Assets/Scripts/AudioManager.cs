@@ -64,4 +64,9 @@ public class AudioManager : MonoBehaviour
     {
         _effectSource.mute = IsSoundMuted;
     }
+
+    public void PlayButtonSound()
+    {
+        PlaySound(_clickSound);
+    }
 }

@@ -48,7 +48,7 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        if(canShoot && Input.GetMouseButtonDown(0))
+        if(canShoot && Input.GetKeyDown(KeyCode.Space))
         {
             Shoot();
         }
@@ -131,6 +131,4 @@ public class Player : MonoBehaviour
             return;
         }
     }
-
-
 }
